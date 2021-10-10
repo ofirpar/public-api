@@ -1,0 +1,43 @@
+#main-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  #top-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffecd5;
+    height: 10%;
+    min-height: 80px;
+  }
+
+  #bottom-container {
+    background-color: lightsteelblue;
+    flex: 9;
+    display: flex;
+    flex-direction: row;
+    height: 90%;
+  }
+
+  #search-container {
+
+  }
+
+  #list-container {
+    background-color: #fadfbe;
+    flex: 9;
+    width: 100%;
+    padding: 5px;
+    align-items: center;
+  }
+
+  #filters-container {
+    flex: 3;
+    background-color: #ffaa40;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+  }
+}
