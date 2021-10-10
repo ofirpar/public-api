@@ -1,0 +1,16 @@
+<div id="filters">
+  <div class="filter">
+    Category
+    <select name="categories" id="category" class="form-control" (change)="setCategory($event)">
+      <option value="">All</option>
+      <option *ngFor="let category of categoryList" [value]="category">{{category}}</option>
+    </select>
+  </div>
+  <div class="filter">
+    Protocol
+    <select name="protocols" id="protocol" class="form-control" (change)="setProtocol($event)">
+      <option value="">All</option>
+      <option *ngFor="let protocol of PROTOCOLS" [value]="protocol">{{protocol}}</option>
+    </select>
+  </div>
+</div>

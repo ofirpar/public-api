@@ -1,0 +1,9 @@
+<div class="api-card">
+  <div class="api-title lead">{{apiEntry.API}}</div>
+  <p class="api-desc">{{apiEntry.Description}}</p>
+  <a class="api-link" [href]="apiEntry.Link" target="_blank">View docs</a>
+  <div class="api-card-bottom">
+    <div class="api-category">{{apiEntry.Category}}</div>
+    <div class="api-https">{{apiEntry.HTTPS ? 'HTTPS' : 'HTTP'}}</div>
+  </div>
+</div>

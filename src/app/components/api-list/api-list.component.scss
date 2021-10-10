@@ -1,0 +1,26 @@
+#api-list {
+  overflow: scroll;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+
+  .card-wrapper{
+    border: 1px solid black;
+    margin: 0px 5px 5px 5px;
+    padding: 5px 10px;
+    width: 27%;
+    max-height: 250px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 2px 0px lightslategrey;
+    background-color: white;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  #api-list {
+    .card-wrapper{
+      width: 45%;
+    }
+  }
+}

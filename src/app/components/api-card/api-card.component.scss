@@ -1,0 +1,24 @@
+.api-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
+  .api-card-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .api-category {
+      border: 1px solid blue;
+      border-radius: 5px;
+      padding: 1px 3px;
+      background: lightsteelblue;
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .api-card-bottom {
+    flex-direction: column-reverse !important;
+  }
+}
